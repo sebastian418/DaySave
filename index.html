@@ -3,298 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DaySave - Preserve What Matters</title>
+    <title>DaySave — Preserve What Matters</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ===== NAVIGATION ===== -->
+    <!-- NAV -->
     <nav class="nav" id="nav">
-        <div class="nav__container">
-            <div class="nav__logo">
-                <span class="logo-icon">◈</span>
-                DaySave
-            </div>
+        <div class="nav__inner">
+            <div class="logo">DaySave</div>
             <ul class="nav__links" id="navLinks">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="nav__cta">
-                <a href="#contact" class="btn btn--outline">Sign In</a>
-                <a href="#contact" class="btn btn--primary">Get Started</a>
-            </div>
-            <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="#contact" class="btn">Get Started</a>
+            <button class="hamburger" id="hamburger">&#9776;</button>
         </div>
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
-    <section class="hero" id="home">
-        <div class="hero__bg">
-            <div class="hero__orb hero__orb--1"></div>
-            <div class="hero__orb hero__orb--2"></div>
-            <div class="hero__orb hero__orb--3"></div>
-        </div>
-        <div class="hero__container">
-            <div class="hero__badge reveal">✦ Every day is a new beginning</div>
-            <h1 class="hero__headline reveal">
-                Capture Every Moment.<br>
-                <span class="gradient-text">Build Lasting Bonds.</span>
-            </h1>
-            <p class="hero__subtext reveal">
-                In the modern world where each day feels different and everything is constantly changing, DaySave helps you preserve and immerse yourself in the memories
-                that matter most to you.
-            </p>
-            <div class="hero__actions reveal">
-                <a href="#contact" class="btn btn--primary btn--lg">Start Remembering Free</a>
-                <a href="#how-it-works" class="btn btn--ghost btn--lg">
-                    <span class="play-icon">▶</span> See How It Works
-                </a>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Save Today.<br>Remember Tomorrow.</h1>
+        <p>DaySave helps you capture daily memories — photos, notes, and voice recordings — so your relationships stay strong even when life moves fast.</p>
+        <a href="#contact" class="btn btn--lg">Start for Free</a>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+        <h2>What DaySave Does</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card__icon">🧠</div>
+                <h3>AI Summaries</h3>
+                <p>Your AI reads your notes and photos and writes a meaningful summary of your day — automatically.</p>
             </div>
-            <div class="hero__stats reveal">
-                <div class="stat">
-                    <span class="stat__number" data-target="50000">0</span><span class="stat__unit">+</span>
-                    <span class="stat__label">Memories Saved</span>
+            <div class="card card--highlight">
+                <div class="card__icon">💎</div>
+                <h3>Memory Capsules</h3>
+                <p>Seal memories in a capsule and unlock them later. Share them with the people you love.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon">&#128106;</div>
+                <h3>Family Sharing</h3>
+                <p>Create a private family space where everyone adds their moments. One place, every memory.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINI FEATURES -->
+    <section class="section section--alt" id="more-features">
+        <h2>Everything You Need</h2>
+        <div class="mini-grid">
+            <div class="mini-card">
+                <span>&#127897;</span>
+                <h4>Voice Recording</h4>
+                <p>Record moments in your own voice as they happen.</p>
+            </div>
+            <div class="mini-card">
+                <span>&#128248;</span>
+                <h4>Upload Photos and Notes</h4>
+                <p>Add photos, write notes, and attach messages easily.</p>
+            </div>
+            <div class="mini-card">
+                <span>&#9729;</span>
+                <h4>Cloud Storage</h4>
+                <p>Everything is saved safely and available on any device.</p>
+            </div>
+            <div class="mini-card">
+                <span>&#128190;</span>
+                <h4>Autosave</h4>
+                <p>Your work saves automatically. Never lose a memory again.</p>
+            </div>
+            <div class="mini-card">
+                <span>&#128279;</span>
+                <h4>Easy Sharing</h4>
+                <p>Share a memory capsule with a simple link.</p>
+            </div>
+            <div class="mini-card">
+                <span>&#127807;</span>
+                <h4>Daily Mindfulness</h4>
+                <p>Daily prompts help you reflect and stay connected.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step__num">1</div>
+                <div class="step__text">
+                    <h3>Capture Your Day</h3>
+                    <p>Add a photo, write a note, or record your voice. DaySave autosaves everything as you go.</p>
                 </div>
-                <div class="stat__divider"></div>
-                <div class="stat">
-                    <span class="stat__number" data-target="12000">0</span><span class="stat__unit">+</span>
-                    <span class="stat__label">Families Connected</span>
+            </div>
+            <div class="step">
+                <div class="step__num">2</div>
+                <div class="step__text">
+                    <h3>AI Builds Your Story</h3>
+                    <p>Our AI turns your captures into a beautiful daily memory summary, written just for you.</p>
                 </div>
-                <div class="stat__divider"></div>
-                <div class="stat">
-                    <span class="stat__number" data-target="98">0</span><span class="stat__unit">%</span>
-                    <span class="stat__label">Feel More Connected</span>
+            </div>
+            <div class="step">
+                <div class="step__num">3</div>
+                <div class="step__text">
+                    <h3>Share and Connect</h3>
+                    <p>Share memories with family and friends. Build capsules together. Stay close no matter what.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== FEATURES SECTION ===== -->
-    <section class="features" id="features">
-        <div class="section__container">
-            <div class="section__header reveal">
-                <span class="section__tag">Features</span>
-                <h2 class="section__title">Everything you need to <span class="gradient-text">remember & reconnect</span></h2>
-                <p class="section__desc">DaySave gives you a complete toolkit for capturing, preserving, and sharing the moments that define your relationships.</p>
-            </div>
-            <div class="features__grid">
-                <div class="feature-card reveal">
-                    <div class="feature-card__icon">🧠</div>
-                    <h3>AI Memory Summaries</h3>
-                    <p>Our AI reads your notes, photos, and voice recordings and creates beautiful, meaningful summaries of your shared moments — so you never forget what matters most.</p>
-                    <div class="feature-card__tag">Powered by AI</div>
-                </div>
-                <div class="feature-card feature-card--highlight reveal">
-                    <div class="feature-card__icon">💎</div>
-                    <h3>Memory Capsules</h3>
-                    <p>Seal a memory capsule with photos, notes, and messages. Lock it for a day, a year, or a decade. Open it together when the time comes and relive every detail.</p>
-                    <div class="feature-card__tag">Most Popular</div>
-                </div>
-                <div class="feature-card reveal">
-                    <div class="feature-card__icon">👨‍👩‍👧‍👦</div>
-                    <h3>Family Sharing</h3>
-                    <p>Create private family circles where everyone contributes memories. Every voice, every photo, every note — all in one shared space that grows richer every day.</p>
-                    <div class="feature-card__tag">Connect Together</div>
+    <!-- ABOUT -->
+    <section class="section section--alt" id="about">
+        <div class="about">
+            <div class="about__text">
+                <h2>Why DaySave?</h2>
+                <p>Life moves fast and memories fade. DaySave was built so you never have to lose the moments that matter — a laugh with your family, a quiet morning, a milestone with a friend.</p>
+                <p>We keep your memories private, secure, and yours forever.</p>
+                <div class="values">
+                    <div class="value">&#128274; <span>End-to-end encrypted. Always private.</span></div>
+                    <div class="value">&#10084; <span>Built to strengthen real relationships.</span></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ===== MINI FEATURES GRID ===== -->
-    <section class="mini-features">
-        <div class="section__container">
-            <div class="mini-grid">
-                <div class="mini-card reveal">
-                    <span class="mini-icon">🎙️</span>
-                    <h4>Voice Recording</h4>
-                    <p>Capture emotions in your own voice. Record moments as they happen — laughter, stories, heartfelt messages.</p>
+            <div class="mock">
+                <div class="mock__header">
+                    <span>DaySave</span>
+                    <span class="mock__date">Today</span>
                 </div>
-                <div class="mini-card reveal">
-                    <span class="mini-icon">📸</span>
-                    <h4>Photo & Notes Upload</h4>
-                    <p>Upload photos, write notes, attach messages. Every format, all in one beautifully organized place.</p>
+                <div class="mock__photo">&#128248;</div>
+                <p class="mock__note">Morning walk with Dad</p>
+                <div class="mock__tags">
+                    <span>#family</span>
+                    <span>#morning</span>
                 </div>
-                <div class="mini-card reveal">
-                    <span class="mini-icon">☁️</span>
-                    <h4>Cloud Storage</h4>
-                    <p>Your memories are safe, secure, and accessible from any device, anywhere in the world, anytime.</p>
-                </div>
-                <div class="mini-card reveal">
-                    <span class="mini-icon">💾</span>
-                    <h4>Autosave</h4>
-                    <p>Never lose a thought. Everything saves automatically as you type, speak, or upload. Zero lost moments.</p>
-                </div>
-                <div class="mini-card reveal">
-                    <span class="mini-icon">🔗</span>
-                    <h4>Easy Sharing</h4>
-                    <p>Share memory capsules with friends and family via a simple link. No account needed to view.</p>
-                </div>
-                <div class="mini-card reveal">
-                    <span class="mini-icon">🌿</span>
-                    <h4>Daily Mindfulness</h4>
-                    <p>Daily prompts to reflect, record, and reconnect with the people and moments that matter most to you.</p>
+                <div class="mock__ai">
+                    <strong>AI Summary</strong>
+                    <p>"A peaceful start, full of quiet joy..."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== HOW IT WORKS ===== -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="section__container">
-            <div class="section__header reveal">
-                <span class="section__tag">How It Works</span>
-                <h2 class="section__title">Three steps to <span class="gradient-text">never forget again</span></h2>
-                <p class="section__desc">Simple by design. Powerful by nature. Start preserving memories in under a minute.</p>
-            </div>
-            <div class="steps">
-                <div class="step reveal">
-                    <div class="step__number">01</div>
-                    <div class="step__content">
-                        <h3>Capture Your Day</h3>
-                        <p>At any moment, capture what's happening — snap a photo, jot a note, or record your voice. DaySave autosaves everything in real time so nothing slips away.</p>
-                    </div>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="contact">
+            <h2>Join the Waitlist</h2>
+            <p>Get early access and 3 months free. Be the first to start saving your days.</p>
+            <form id="contactForm" class="form">
+                <div class="form__row">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
                 </div>
-                <div class="step reveal">
-                    <div class="step__number">02</div>
-                    <div class="step__content">
-                        <h3>AI Builds Your Story</h3>
-                        <p>Our AI analyzes your captures and weaves them into a beautiful daily memory summary — the story of your day, automatically written with care and meaning.</p>
-                    </div>
-                </div>
-                <div class="step reveal">
-                    <div class="step__number">03</div>
-                    <div class="step__content">
-                        <h3>Share & Connect</h3>
-                        <p>Share your daily memories with family and friends. Build memory capsules together. Watch your relationships deepen with every shared moment, every single day.</p>
-                    </div>
-                </div>
+                <textarea name="message" rows="3" placeholder="What memories do you want to save?"></textarea>
+                <button type="submit" class="btn btn--lg">Join Waitlist</button>
+            </form>
+            <div class="form__success" id="formSuccess">
+                <p>You are on the list! We will be in touch soon.</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section class="about" id="about">
-        <div class="section__container">
-            <div class="about__grid">
-                <div class="about__content reveal">
-                    <span class="section__tag">About DaySave</span>
-                    <h2 class="section__title">Built for a world that <span class="gradient-text">resets every day</span></h2>
-                    <p>We live in a moment where connections are fragile and memories fade fast. DaySave was born from a simple belief: the moments you share with people are too precious to lose.</p>
-                    <p>Whether it's a laugh with your family, a milestone with a friend, or a quiet moment of peace — we give you the tools to hold on. To remember. To reconnect.</p>
-                    <div class="about__values">
-                        <div class="value">
-                            <span class="value__icon">🔒</span>
-                            <div>
-                                <strong>Privacy First</strong>
-                                <p>Your memories are yours alone. End-to-end encrypted, always private, never sold.</p>
-                            </div>
-                        </div>
-                        <div class="value">
-                            <span class="value__icon">❤️</span>
-                            <div>
-                                <strong>Human-Centered</strong>
-                                <p>Designed to strengthen real relationships, not replace them with algorithms.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about__visual reveal">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="phone-header">
-                                <span>DaySave</span>
-                                <span class="phone-time">Today</span>
-                            </div>
-                            <div class="memory-card">
-                                <div class="memory-photo"></div>
-                                <div class="memory-info">
-                                    <span class="memory-date">May 23, 2026</span>
-                                    <p class="memory-text">Sunday morning coffee with Mom ☕</p>
-                                    <div class="memory-tags">
-                                        <span>#family</span>
-                                        <span>#peaceful</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ai-summary">
-                                <span class="ai-label">✨ AI Summary</span>
-                                <p>"A warm morning filled with love and quiet connection..."</p>
-                            </div>
-                            <div class="phone-actions">
-                                <button class="phone-btn">🎙️ Record</button>
-                                <button class="phone-btn">📸 Add</button>
-                                <button class="phone-btn">🔗 Share</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section class="contact" id="contact">
-        <div class="section__container">
-            <div class="contact__wrapper reveal">
-                <div class="section__header">
-                    <span class="section__tag">Get Early Access</span>
-                    <h2 class="section__title">Join the waitlist & <span class="gradient-text">start remembering</span></h2>
-                    <p class="section__desc">Be the first to experience DaySave. Early access members get 3 months free and lifetime premium pricing.</p>
-                </div>
-                <form class="contact__form" id="contactForm">
-                    <div class="form__row">
-                        <div class="form__group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form__group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                        </div>
-                    </div>
-                    <div class="form__group">
-                        <label for="message">What memories do you want to preserve?</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your story..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary btn--lg btn--full">
-                        Join the Waitlist ✦
-                    </button>
-                </form>
-                <div class="form__success" id="formSuccess">
-                    <span>🎉</span>
-                    <h3>You're on the list!</h3>
-                    <p>We'll reach out soon. Get ready to start building your memory vault.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__brand">
-                <div class="nav__logo">
-                    <span class="logo-icon">◈</span>
-                    DaySave
-                </div>
-                <p>Preserve what matters. Build relationships that last.</p>
-            </div>
-            <nav class="footer__links">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <p class="footer__copy">© 2026 DaySave. All rights reserved. Made with ♥</p>
-        </div>
+        <div class="logo">DaySave</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <p>2026 DaySave. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
