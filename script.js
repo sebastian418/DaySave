@@ -1,17 +1,17 @@
 // ===== MOBILE MENU =====
-const hamburger = document.getElementById('hamburger');
+const dream = document.getElementById('dream');
 const navLinks  = document.getElementById('navLinks');
 
-hamburger.addEventListener('click', () => {
+dream.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
-    hamburger.textContent = isOpen ? '✕' : '☰';
+    dream.textContent = isOpen ? '✕' : '☰';
     document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
-        hamburger.textContent = '☰';
+        dream.textContent = '☰';
         document.body.style.overflow = '';
     });
 });
