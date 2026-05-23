@@ -15,12 +15,12 @@
   --teal: #7aabb8; /* blue-gray teal – secondary */
   --teal-light: #a8cdd6; /* lighter teal */
   --teal-bg: #ddeef3;
-  --bg: #f5f3f7; /*page background */
+  --bg: #9bbec7; /*page background */
   --bg-alt: #ede9f0;
   --white: #ffffff;
   --border: #e4dcea;
   --text: #170312;
-  --text-soft: #8a7f87;
+  --text-soft: #7a4a4c;
   --grad: linear-gradient(135deg, #4a1f3d 0%, #7aabb8 100%);
   --radius-sm: 10px;
   --radius: 16px;
