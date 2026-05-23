@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(open \"/Users/ifeomaasoh 1/DreamVenture/index.html\")"
+      "Bash(open \"/Users/ifeomaasoh 1/DreamVenture/index.html\")",
+      "WebFetch(domain:www.figma.com)"
     ]
   }
 }

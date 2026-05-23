@@ -1,9 +1,3 @@
-// ===== NAV: SCROLL SHADOW =====
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-    nav.style.boxShadow = window.scrollY > 10 ? '0 2px 12px rgba(33,150,243,0.1)' : 'none';
-});
-
 // ===== MOBILE MENU =====
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
@@ -23,16 +17,23 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // ===== FADE IN ON SCROLL =====
-const fadeEls = document.querySelectorAll(
-    '.card, .mini-card, .step, .mock, .about__text, .contact'
-);
-fadeEls.forEach(el => el.classList.add('fade'));
+const fadeEls = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver(
-    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    entries => entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+    }),
     { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
 );
+
 fadeEls.forEach(el => observer.observe(el));
+
+// ===== STAGGER grid children =====
+document.querySelectorAll('.feature-grid, .pricing-cards').forEach(grid => {
+    grid.querySelectorAll('.fade').forEach((el, i) => {
+        el.style.transitionDelay = `${i * 0.08}s`;
+    });
+});
 
 // ===== CONTACT FORM =====
 const form    = document.getElementById('contactForm');
