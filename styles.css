@@ -147,17 +147,7 @@ ul {
   margin-left: auto;
 }
 
-<<<<<<< HEAD
 .dream {
-    display: none;
-    margin-left: auto;
-    background: none;
-    border: none;
-    font-size: 22px;
-    cursor: pointer;
-    color: var(--plum);
-=======
-.hamburger {
   display: none;
   margin-left: auto;
   background: none;
@@ -165,7 +155,6 @@ ul {
   font-size: 22px;
   cursor: pointer;
   color: var(--plum);
->>>>>>> 7a2ada7bd6e45b8804a6d502e232600f8e606b70
 }
 
 /* ===== HERO ===== */
@@ -1073,34 +1062,13 @@ ul {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
-    .nav__links { display: none; }
-    .nav .btn   { display: none; }
-    .dream  { display: block; }
-    .nav__links.open {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        inset: 0;
-        background: var(--bg);
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-        font-size: 20px;
-        z-index: 99;
-    }
-    .nav__links.open a { color: var(--plum); font-weight: 600; }
-    .feature-grid { grid-template-columns: 1fr; }
-    .form__row    { grid-template-columns: 1fr; }
-    .phone        { width: 260px; }
-=======
   .nav__links {
     display: none;
   }
   .nav .btn {
     display: none;
   }
-  .hamburger {
+  .dream {
     display: block;
   }
   .nav__links.open {
@@ -1128,7 +1096,6 @@ ul {
   .phone {
     width: 260px;
   }
->>>>>>> 7a2ada7bd6e45b8804a6d502e232600f8e606b70
 }
 
 @media (max-width: 480px) {
