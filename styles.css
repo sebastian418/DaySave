@@ -9,10 +9,10 @@
 
 /* ===== DESIGN TOKENS (from wireframe) ===== */
 :root {
-  --plum: #4a1f3d; /* dark plum – headings, primary */
-  --plum-deep: #3d1a32; /* deeper plum */
+  --plum: #4a1f3d; /* headings, primary */
+  --plum-deep: #3d1a32; /* highlight plum */
   --plum-light: #7a4f6d; /* lighter plum for accents */
-  --teal: #7aabb8; /* blue-gray teal – secondary */
+  --teal: #7aabb8; /* blue-gray secondary */
   --teal-light: #a8cdd6; /* lighter teal */
   --teal-bg: #ddeef3;
   --bg: #9bbec7; /*page background */
@@ -107,6 +107,17 @@ ul {
   padding: 14px 24px;
   transition: var(--ease);
 }
+.nav_logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 24px;
+  transition: var(--ease);
+}
+
 .nav__inner {
   max-width: var(--max);
   margin: 0 auto;
